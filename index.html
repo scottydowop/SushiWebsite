@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>psudeo</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+	   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	   crossorigin=""/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<div class="pageColor">
+	</div>
+
+	<div class="logo">
+		<img src="https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/10427996_10152277042338001_3114133363639527243_n.jpg?_nc_cat=104&_nc_ht=scontent.fphx1-2.fna&oh=93b027f4072d942acdb1a898ff114722&oe=5D11AFC2" alt="">
+	</div>
+
+	<div class="topnav" id="myTopnav">
+		  <a href="#home" class="active">Home</a>
+		  <a href="#appet">Menu</a>
+		  <a href="#about">Contact</a>
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		    <i class="fa fa-bars"></i>
+		  </a>
+	</div>
+
+	<div class="welcome">
+		<h1> Welcome to Sushi Ave</h1>
+			<br>
+			<p>Gilbert's family owned Sushi and Sake Resteraunt</p>
+			<br>
+			<p>Sushi Avenue is the destination for fresh sushi prepared daily combined with superior service. We begin the service by working with you to tailor a fresh sushi program customized to your operation and clientele. It is extended at the counter through our trained business partners who offer fresh creations rolled with a smile.</p>
+	</div>
+
+	<div class="reservations">
+		<h3>Reservations</h3>
+		<p>CALL  (480) 218-5700  (GILBERT) FOR DETAIL TODAY</p>
+	</div>
+
+	<div class="slider">
+		<figure>
+			<img src="https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/12234885_10153453547653001_2604311679304509273_n.jpg?_nc_cat=106&_nc_ht=scontent.fphx1-1.fna&oh=240a67f2375cf619db1fc202eedbaf4b&oe=5D4B102A" alt="">
+			<img src="https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-0/p200x200/29790929_10155945065888001_3251996424024697192_n.jpg?_nc_cat=109&_nc_ht=scontent.fphx1-1.fna&oh=97dc659417b82faedfb5e8d9974d5530&oe=5D4C250C" alt="">
+			<img src="https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/11742882_10153221654848001_2623010689816005586_n.jpg?_nc_cat=111&_nc_ht=scontent.fphx1-1.fna&oh=2bb34e65cdf986a12cf7d6e58f81b977&oe=5D4C7BC6" alt="">
+			<img src="https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/10401520_10152651559803001_1944037863256857006_n.jpg?_nc_cat=102&_nc_ht=scontent.fphx1-2.fna&oh=e8d6e03de1bd7c239b75087a97a50b8d&oe=5D0F52AE" alt="">
+			<img src="https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/12234885_10153453547653001_2604311679304509273_n.jpg?_nc_cat=106&_nc_ht=scontent.fphx1-1.fna&oh=240a67f2375cf619db1fc202eedbaf4b&oe=5D4B102A" alt="">
+		</figure>
+    </div>
+
+	<div class="logo">
+		<img src="https://scontent.fphx1-2.fna.fbcdn.net/v/t1.0-9/10427996_10152277042338001_3114133363639527243_n.jpg?_nc_cat=104&_nc_ht=scontent.fphx1-2.fna&oh=93b027f4072d942acdb1a898ff114722&oe=5D11AFC2" alt="">
+	</div>
+
+	<div class="containerInfo" id="appet">
+		<p class="meal">Appetizers</p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Edamame</p>
+			<p class="price">$3</p>
+			<p class="info">Steamed soybeans lightly sprinkled with salt</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Spicy Garlic Edamame</p>
+			<p class="price">$5</p>
+			<p class="info">Stir fried soybeans with chili pepper and garlic</p>
+		</div>
+		
+
+		<div class="item">
+			<p class="name">Potstickers</p>
+			<p class="price">$5.5</p>
+			<p class="info">Chicken and vegetable dumblings and ponzu sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Hawaiian Shrimp</p>
+			<p class="price">$7</p>
+			<p class="info">Deep fried shrimps with hawaiian sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Shishito Pepper</p>
+			<p class="price">$6.5</p>
+			<p class="info">Japanese pepper sauteed and sake butter and soy sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Egg Rolls</p>
+			<p class="price">$6</p>
+			<p class="info">Vegatable egg rolls with hawaiian sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Agedashi Tofu</p>
+			<p class="price">$5.5</p>
+			<p class="info">Deep-fried tofu in soy broth with bonito flake and green onion</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Shumai</p>
+			<p class="price">$6</p>
+			<p class="info">Steamed shrmp dumblings with ponzu sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Jalapeno Poppers (Crab)</p>
+			<p class="price">$6.5</p>
+			<p class="info">Deep-fried in panko batter wth jalapeno, cream cheese and crab mix</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Chicken Wings</p>
+			<p class="price">$7</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sake Kama*</p>
+			<p class="price">$7</p>
+			<p class="info">Grilled salmon collar with ponzu sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Hamachi Kama</p>
+			<p class="price">$10</p>
+			<p class="info">Grilled yellowtail collar with ponzu sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Crab Cake</p>
+			<p class="price">$7</p>
+			<p class="info">Panko crushed crab cakes with spicy mayo</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Cream Shrimp</p>
+			<p class="price">$8.5</p>
+			<p class="info">Crispy shrimp dressed with sweet honey mayo and parsley powder</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Green Mussels</p>
+			<p class="price">$7.5</p>
+			<p class="info"></p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="soup">
+		<h3 class="meal">Soups and Noodles</h3>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Tempura Udon</p>
+			<p class="price">$11.00</p>
+			<p class="info">Japanese thick noodle soup served with mixed tempura</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Seafood Ramen</p>
+			<p class="price">$12.00</p>
+			<p class="info">Spicy Ramen with mussel, clam, shrimp, vegatable and egg</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Nabe Yaki Udon</p>
+			<p class="price">$13+</p>
+			<p class="info">Shrimp Tempura, chicken, fish cake, egg and vegatables in a hot pot</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Yaki Soba</p>
+			<p class="price">$9+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Ten-Zaru</p>
+			<p class="price">$13+</p>
+			<p class="info">Cold buckwheat noodle with shrimp tempura</p>
+		</div>
+
+		<div class="item">
+			<p class="name">yaki Udon</p>
+			<p class="price">$12+</p>
+			<p class="info"></p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="salads">
+		<h3 class="meal">Salads</h3>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">House Salad</p>
+			<p class="price">$3</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Cucumber Salad</p>
+			<p class="price">$4</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Seaweed Salad</p>
+			<p class="price">$5</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Octopus Salad</p>
+			<p class="price">$7</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Squid Salad</p>
+			<p class="price">$6</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Taco Kimichi</p>
+			<p class="price">$7.5</p>
+			<p class="info">Spicy octopus salad with seasned cucumber and green onions</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Tofu Salad</p>
+			<p class="price">$8</p>
+			<p class="info">Lightly battered crispy tofu over a bed of mixed greens and citrus soy dressing</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Tuna Tataki Salad*</p>
+			<p class="price">$15</p>
+			<p class="info">Thinly slice seared ahi tuna over a bed of mixed greens with tataki dressing</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sashimi Salad*</p>
+			<p class="price">$15</p>
+			<p class="info">Assorted Shrimp over a bed of mixed greens with garlic soy dressing</p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="nigiri">
+		<h3 class="meal">Nigiri Sushi</h3>
+		<p>2 peices</p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Tuna (Maguro)*</p>
+			<p class="price">$5.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Seared Tuna</p>
+			<p class="price">$5.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Salmon(Sake*)</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Salmon bomb(Spicy Salmon)*</p>
+			<p class="price">$5.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Yellowtail (Hamachi)*</p>
+			<p class="price">$5.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Yellowtail Bomb*</p>
+			<p class="price">$6.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Albacore (Bincho Maguro)*</p>
+			<p class="price">$5.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">White Fish (Izumida)*</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Super White Tuna(Escolar)*</p>
+			<p class="price">$6.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Shrimp (Ebi)*</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Fresh Water Eel (Umagi)</p>
+			<p class="price">$6.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sweet Shrimp (Ama Ebi)*</p>
+			<p class="price">$6.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Squid (Ika)*</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Mackeral (Saba)*</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Crab (Kani)</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Surf Clam (Hokkigai)*</p>
+			<p class="price">$5.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Smelt Roe (Masago)*</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Flying Fish Roe(Tobiko)*</p>
+			<p class="price">$5.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Salmon Roe (Ikura)*</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Spicy Scallop (Hotategai)*</p>
+			<p class="price">$4.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sweet Egg (Tamago)</p>
+			<p class="price">$3.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Quail Egg (Uzura)*</p>
+			<p class="price">$2.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Octopus (Tako)*</p>
+			<p class="price">$5.00</p>
+			<p class="info"></p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="sashimi">
+		<h3 class="meal">Sashimi Sushi</h3>
+		<p>5 peices</p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Tuna (Maguro)*</p>
+			<p class="price">$13.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Seared Tuna</p>
+			<p class="price">$12.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Salmon(Sake*)</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Salmon bomb(Spicy Salmon)*</p>
+			<p class="price">$11.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Yellowtail (Hamachi)*</p>
+			<p class="price">$11.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Yellowtail Bomb*</p>
+			<p class="price">$12.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Albacore (Bincho Maguro)*</p>
+			<p class="price">$11.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">White Fish (Izumida)*</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Super White Tuna(Escolar)*</p>
+			<p class="price">$13.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Shrimp (Ebi)*</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Fresh Water Eel (Umagi)</p>
+			<p class="price">$13.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sweet Shrimp (Ama Ebi)*</p>
+			<p class="price">$14.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Squid (Ika)*</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Mackeral (Saba)*</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Crab (Kani)</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Surf Clam (Hokkigai)*</p>
+			<p class="price">$11.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Smelt Roe (Masago)*</p>
+			<p class="price">$11.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Flying Fish Roe(Tobiko)*</p>
+			<p class="price">$12.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Salmon Roe (Ikura)*</p>
+			<p class="price">$13.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Spicy Scallop (Hotategai)*</p>
+			<p class="price">$11.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sweet Egg (Tamago)</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Quail Egg (Uzura)*</p>
+			<p class="price">$7.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Octopus (Tako)*</p>
+			<p class="price">$11.00</p>
+			<p class="info"></p>
+		</div>
+	</div>
+
+
+	<div class="containerInfo" id="sushiEntree">
+		<h3 class="meal">Sushi Entree</h3>
+		<p></p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Sushi Entree</p>
+			<p class="price">$16.95</p>
+			<p class="info">7 pieces of chef's choice nigiri, 4 pieces of California roll, 4 pieces of spicy tuna roll. Served with miso soup and house green salad</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sashimi Entree</p>
+			<p class="price">$16.95</p>
+			<p class="info">10 pieces of chef's choice sashimi, served with a bowl of rice. Served with miso soup and house green salad</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Chirashi Don</p>
+			<p class="price">$17.95</p>
+			<p class="info">Japanese traditional chef's choice sashimi rice bowl. Served with miso soup and house green salad</p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="Entree">
+		<h3 class="meal">Entree</h3>
+		<p>Served with steamed rice, miso soup and salad Subsitute fried rice add $2</p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Tempura Dinner</p>
+			<p class="price">$10.00+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Teriyaki</p>
+			<p class="price">$8.00+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sizzling BBQ Short rib</p>
+			<p class="price">$18.00</p>
+			<p class="info">Charbroiled short ribs marinated with Korean sweet garlic soy. Sizzling. Served with steamed rice, soup and salad.</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sizzling Spicy Pork</p>
+			<p class="price">$13.00</p>
+			<p class="info">Thinly sliced pork marinated in a hot and sweet sauce, sauteed with vegetable. Sizzling. Served with steamed rice, soup and salad.</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sizzling Bulgogi</p>
+			<p class="price">$13.00</p>
+			<p class="info">Thinly sliced beef marinated in a sweet soy sauce, sauteed with vegetable. Sizzling. Served with steamed rice, soup and salad</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Fried Rice</p>
+			<p class="price">$8.00+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Orange Chicken</p>
+			<p class="price">$10.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Katsu Chicken</p>
+			<p class="price">$12.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Una-la</p>
+			<p class="price">$18.00</p>
+			<p class="info">Fresh water eel with eel sauce and green onion over seasoned rice. Served with steamed rice, soup and salad</p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="rolls">
+		<h3 class="meal">Rolls</h3>
+		<p></p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">8 pieces California Roll</p>
+			<p class="price">$4.95+</p>
+			<p class="info">Crab mix, cucumber, and avocado</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Creamy California Roll</p>
+			<p class="price">$5.95+</p>
+			<p class="info">California roll with cream cheese</p>
+		</div>
+
+
+		<div class="item">
+			<p class="name">8 pieces Crunch California Roll</p>
+			<p class="price">$5.95+</p>
+			<p class="info">California roll topped with crunch and eel sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 Pieces Salmon Roll*</p>
+			<p class="price">$4.95+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Tuna Roll</p>
+			<p class="price">$4.95+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Yellowtail Roll*</p>
+			<p class="price">$6.50+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Negihama Roll*</p>
+			<p class="price">$6.95+</p>
+			<p class="info">Yellowtail and scallion</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Spicy Tuna Roll*</p>
+			<p class="price">$6.50+</p>
+			<p class="info">Spicy tuna and cucumber</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Spicy Salmon Roll*</p>
+			<p class="price">$6.50+</p>
+			<p class="info">Spicy salmon and cucumber</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Spicy Yellowtail Roll*</p>
+			<p class="price">$6.95+</p>
+			<p class="info">Spicy Yellowtail and cucumber</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Spicy Crab Roll</p>
+			<p class="price">$5.50+</p>
+			<p class="info">Spicy Crab and cucumber</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Salmon Skin Roll</p>
+			<p class="price">$6.50+</p>
+			<p class="info">Baked salmon skin, yamagobo, and cucumber</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Eel Cucumber Roll</p>
+			<p class="price">$6.95+</p>
+			<p class="info">Baked fresh water eel and cucumber with eel sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Philly Roll*</p>
+			<p class="price">$6.50+</p>
+			<p class="info">Salmon, cream cheese, and avocado</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Tootsie Roll</p>
+			<p class="price">$7.95+</p>
+			<p class="info">Crab mix, coocked shrimp, avocado, cucumber topped with crunch and eel sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Spicy Tuna Tempura Roll*</p>
+			<p class="price">$7.95+</p>
+			<p class="info">Panko crushed spicy tuna roll with eel sauce and spicy mayo</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 peices Shrip Tempura Roll</p>
+			<p class="price">$8.50+</p>
+			<p class="info">Shrip Tempura, crab mix, cucumber, avocado with eel and yumyum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Calamari Tempura Roll</p>
+			<p class="price">$8.50+</p>
+			<p class="info">Calamari tempura, crab mix, cucumber, avocado with eel and yumyum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Salmon Tempura Roll</p>
+			<p class="price">$9.50+</p>
+			<p class="info">Salmon tempura, crab mix, cucumber, avocado with eel and yumyum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Ultimate California Roll</p>
+			<p class="price">$9.50+</p>
+			<p class="info"></p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="veggieRolls">
+		<h3 class="meal">Vegetable Rolls</h3>
+		<p></p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Cucumber Roll</p>
+			<p class="price">$3.95+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Avocado Roll</p>
+			<p class="price">$4.50+</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Vegetarian Roll</p>
+			<p class="price">$6.95</p>
+			<p class="info">Cucumber, asparagus, crisinko, avocado, and yamagobo</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sweet Potato Roll</p>
+			<p class="price">$6.95</p>
+			<p class="info">Lightly battered sweet potato, advocado, topped with crunch and eel sauce</p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="signatureRolls">
+		<h3 class="meal">Signature Rolls</h3>
+		<p>8 Pieces</p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Garlic Spicy Tuna Roll</p>
+			<p class="price">$12.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Love Love Roll</p>
+			<p class="price">$12.95</p>
+			<p class="info">No rice. Spicy crab, avocado, green salad, radish sprout wrapped with tuna, drizzled wiht Hawiian sauce and mustard sauce. Raw.</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sassy Albacor Roll*</p>
+			<p class="price">$12.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Rolling Tiger Roll</p>
+			<p class="price">$12.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Double Spicy Roll*</p>
+			<p class="price">$11.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Phx Suns Roll*</p>
+			<p class="price">$13.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Alaska Roll</p>
+			<p class="price">$10.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Caterpillar Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Red Catapillar Roll*</p>
+			<p class="price">$11.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Rainbow Roll*</p>
+			<p class="price">$10.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Tropical Roll*</p>
+			<p class="price">$19.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Red Lobster Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Red Rock Roll*</p>
+			<p class="price">$9.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Sunset Roll*</p>
+			<p class="price">$10.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Tuna Tataki Roll</p>
+			<p class="price">$12.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Ultimate Philly Roll*</p>
+			<p class="price">$11.50</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">White Christmas Roll*</p>
+			<p class="price">$12.95</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">French Kiss Roll*</p>
+			<p class="price">$12.50</p>
+			<p class="info"></p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="signatureBakedRolls">
+		<h3 class="meal">Signature Baked Rolls</h3>
+		<p></p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">6 pieces BBQ Short Rib Roll</p>
+			<p class="price">$14.95</p>
+			<p class="info">BBQ short rib, crab mix, avocado and cucumber. Topped with eel sauce, scallion and yum yum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Dragon Roll</p>
+			<p class="price">$11.50</p>
+			<p class="info">Crab mix and cucumber. Topped with baked fresh water eel and avocado. Drizzled with eel sauce and creamy soy sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Chicken Teriyaki Roll</p>
+			<p class="price">$9.95</p>
+			<p class="info">Chicken Teriyaki, crab mix, cucumber. Topped with eel sauce, scallion and yumyum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Red Dragon Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info">Spicy crab mix and cucumber. Topped with baked fresh water eel and avocado. Drizzled with eel sauce and siracha dot</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Baked Scallop Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info">Crab mix and avocado. Topped with mixture of baked scallop, crab mix, eel sauce, and spicy mayo sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Fever Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info">Crab mix and avocado. Topped with mixture of crab mix, baked lobster tail, spicy mayo, eel sauce, and boniti flake</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Dynamite Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info">Crab mix and avocado. Topped with baked fishes mixture with crab mix, onion, spicy mayo baked, drizzled eel sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Volcano Roll*</p>
+			<p class="price">$11.95</p>
+			<p class="info">Oven cooked Philly roll. Topped with spicy crab mix and spicy mayo. Drizzled with eel sauce and crunch</p>
+		</div>
+
+		<div class="item">
+			<p class="name">8 pieces Ultimate Dragon Roll</p>
+			<p class="price">$12.95</p>
+			<p class="info">Shrimp tempura, crab mix and cucumber. Topped wth baked eel and avocado. Drizzled with creamy soy sauce, eel sauce, and rice crunch</p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="signatureTempRolls">
+		<h3 class="meal">Signature Tempura Rolls</h3>
+		<p>8 pieces</p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Ultimate Rainbow Roll*</p>
+			<p class="price">$12.95</p>
+			<p class="info">Shrimp tempura, crab mix, and cucumber. Topped with torch seared fishes and onion. Drizzled with eel and sciracha sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Hotty Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info">No rice.Lighly battered spicy tuna, crab mix, cream cheese, and avocado roll. Topped with jalapeno, asparagus tempura, spicy garlic sauce, yumyum sauce and siracha dot</p>
+		</div>
+
+
+		<div class="item">
+			<p class="name">Samurai Roll*</p>
+			<p class="price">$12.95</p>
+			<p class="info">Panko battered tempura roll with spicy tuna, tuna, crab mix, avocado. Topped with samurai sauce and eel suace</p>
+		</div>
+
+		<div class="item">
+			<p class="name">ASU Roll*</p>
+			<p class="price">$11.95</p>
+			<p class="info">Shrimp tempura and cucumber. Topped with spicy tuna and jalapeno. Drizzled with eel sauce and creamy wasabi sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Jalapeno Roll*</p>
+			<p class="price">$12.95</p>
+			<p class="info">Panko crusted jalapeno stuffed with cream cheese and crab mix, and spicy tuna. Topped with crunch, eel sauce, yumyum sauce, and siriacha dot. Served with side stuffed jalapeno</p>
+		</div>
+
+
+		<div class="item">
+			<p class="name">Arizona Roll*</p>
+			<p class="price">$12.95</p>
+			<p class="info">Panko buttered roll, crab mix and cream chesse. Topped with spicy tuna, eel sauce, spicy, Hawaiian sauce and siriacha</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Spider Roll</p>
+			<p class="price">$12.50</p>
+			<p class="info">Soft shell crab, crab mix, avocado and cucumber. Drizzled with eel sauce and yumyum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Red Spider Roll*</p>
+			<p class="price">$12.95</p>
+			<p class="info">Soft shell crab, spicy tuna and cucumber. Drizzled with eel sauce, spicy mayo, and crunch on top</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Crazy Lobster Roll*</p>
+			<p class="price">$11.95</p>
+			<p class="info">Lighly battered crab mix, lobster tail and avocado roll. Drizzled with spicy mayo and eel sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Crunch Lollipop Roll*</p>
+			<p class="price">$11.95</p>
+			<p class="info">Lightly battered crab mix, avocado and assorted fishes. Drizzled with eel sauce and yumyum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">King Kong Roll*</p>
+			<p class="price">$12.50</p>
+			<p class="info">Deep friedeels, cream cheese and crab mix. Topped with yellowtail, avocado, crunch, eel sauce and yumyum sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Maui Roll*</p>
+			<p class="price">$12.50</p>
+			<p class="info">Shrip tempura, crab mix and aspargus. Topped with white fish and avocado. Drizzled with mango sauce and Hawaiian sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces Las Vegas Roll*</p>
+			<p class="price">$9.95</p>
+			<p class="info">Lightly battered salmon, cream cheese, crab mix, avocado roll with eel sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">6 pieces New York Roll*</p>
+			<p class="price">$9.95</p>
+			<p class="info">Lightly battered spicy salmon, cream cheese, crab mix, and avocado with eel sauce, and yum yum sauce. Served with vegetable tempura. Raw</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Hawaiian Roll</p>
+			<p class="price">$9.95</p>
+			<p class="info">Shrimp tempura, asparagus and crab mix. Topped with crunch and Hawaiian sauce</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Ultimate Shrip Roll</p>
+			<p class="price">$11.95</p>
+			<p class="info">Shrimp tempura, crab mix, cucumber, and avocado. Topped with shrimp, eel sauce and creamy wasabi sauce</p>
+		</div>
+	</div>
+
+	<div class="containerInfo" id="sushiCombo">
+		<h3 class="meal">Sushi Combination</h3>
+		<p></p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">7 pieces Ave Boat A*</p>
+			<p class="price">$12.95</p>
+			<p class="info">Chef choice nigiri sushi</p>
+		</div>
+
+		<div class="item">
+			<p class="name">14 pieces Ave Boat B*</p>
+			<p class="price">$23.95</p>
+			<p class="info">Chef choice nigiri sushi</p>
+		</div>
+
+
+		<div class="item">
+			<p class="name">12 pieces Sashimi Combo A*</p>
+			<p class="price">$19.95</p>
+			<p class="info">Chef choice sashimi platter</p>
+		</div>
+
+		<div class="item">
+			<p class="name">20 pieces Sashimi Combo B*</p>
+			<p class="price">$29.95</p>
+			<p class="info">Chef choice sashimi platter</p>
+		</div>
+
+		<div class="item">
+			<p class="name">28 pieces Sashimi Combo C*</p>
+			<p class="price">$39.95</p>
+			<p class="info">Chef choice sashimi platter</p>
+		</div>
+
+		<div class="item">
+			<p class="name">Ava Combo (Chef Special)*</p>
+			<p class="price">$74.95</p>
+			<p class="info">Chef choice of 10 pieces some thing and then a 20 peices of shashimi playtter with a crunchy lolipop spicy tuna spierroll rainbow roll and mixed</p>
+		</div>
+	</div>
+
+	<div class="containerInfo">
+		<h3 class="meal">Dinner Combo</h3>
+		<p></p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Dinner Combi</p>
+			<p class="price">$16.95</p>
+			<p class="info">Served with miso soup and salad</p>
+		</div>
+	</div>
+
+	<div class="containerInfo">
+		<h3 class="meal">Side Orders</h3>
+		<p></p>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="item">
+			<p class="name">Miso Soup</p>
+			<p class="price">$3.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Kim Chi</p>
+			<p class="price">$4.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Steamed Rice</p>
+			<p class="price">$2.00</p>
+			<p class="info"></p>
+		</div>
+
+		<div class="item">
+			<p class="name">Fried Rice</p>
+			<p class="price">$4.00</p>
+			<p class="info"></p>
+		</div>
+		
+	</div>
+	<hr>
+
+	<div class="about" id="about">
+		<div class="location">
+			<h3>Our Location!</h3>
+			<div id="mapid"></div>
+		</div>
+		<div class="operation">
+			<div class="op">
+				<h3>Phone</h3>
+				<p>(480) 218-5700</p>
+			</div>
+			<div class="op">
+				<h3>Location</h3>
+				<p> 
+					866 N. Higley Rd<br>
+					 Gilbert AZ 85234
+				</p>
+			</div>
+			<div class="op">
+				<h3>Hours</h3>
+				<p>
+					<b>Mon-Thu:</b> 11am – 9pm<br>
+					<b>Fri</b>11am – 10pm<br>
+					<b>Sat:</b>12pm – 10pm<br>
+					<b>Sun</b>Closed<br>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	 
+
+
+
+
+
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+   <script src="index.js"></script>
+</body>
+</html>
